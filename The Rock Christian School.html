@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Rock Christian School</title>
+    <link rel="stylesheet" href="./The Rock Christian School_files/style.css">
+</head>
+<body>
+
+<header>
+    <h1> The Rock Christian School</h1>
+    <p>Raising Godly Leaders</p>
+</header>
+
+<nav>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="academics.html">Academics</a></li>
+    <li><a href="admissions.html">Admissions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to The Rock Christian School</h1>
+</section>
+
+<div class="container">
+
+    <div class="card">
+        <div school="welcome-section">
+            <img src="./The Rock Christian School_files/school-building.jpg" alt="School Building">
+
+            <div class="welcome-text">
+                <h2>Welcome to The Rock Christian School</h2>
+                <p>
+                    We are dedicated to providing high-quality Christian
+                    education that inspires students to excel academically,
+                    grow spiritually, and become responsible leaders.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Our Mission</h2>
+        <p>
+            To provide quality Christian education that nurtures
+            academic excellence, leadership, integrity and spiritual growth.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>School Life Gallery</h2>
+
+        <div class="gallery">
+            <img src="./The Rock Christian School_files/students.jpg" alt="Students">
+            <img src="./The Rock Christian School_files/classroom.jpg" alt="Classroom">
+            <img src="./The Rock Christian School_files/sports.jpg" alt="Sports Activities">
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 The Rock Christian School. All Rights Reserved.</p>
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
