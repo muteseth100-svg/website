@@ -1,31 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Admissions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - The Rock Christian School</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
 <header>
     <h1>Admissions</h1>
 </header>
 
-<section>
-    <h2>Apply Now</h2>
+<main>
+    <section>
+        <h2>Apply Now</h2>
 
-    <form>
-        <label>Student Name:</label><br>
-        <input type="text"><br><br>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="student_name" required>
+            </div>
 
-        <label>Email:</label><br>
-        <input type="email"><br><br>
+            <div class="form-group">
+                <label for="email">Parent/Guardian Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <label>Class:</label><br>
-        <input type="text"><br><br>
+            <div class="form-group">
+                <label for="class-level">Class/Grade Level:</label>
+                <input type="text" id="class-level" name="class_level" required>
+            </div>
 
-        <button type="submit">Submit</button>
-    </form>
-</section>
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 The Rock Christian School. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
